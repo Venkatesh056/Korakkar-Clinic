@@ -1,0 +1,120 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-forest: #16382b;
+    --color-forest-dark: #0f271e;
+    --color-moss: #2b5542;
+    --color-leaf: #4f7358;
+    --color-sage: #9bb09f;
+    --color-gold: #b88628;
+    --color-gold-light: #d6a84f;
+    --color-amber: #94681f;
+    --color-ivory: #faf7f2;
+    --color-parchment: #f0eae1;
+    --color-linen: #e4ddd1;
+    --color-paper: #ffffff;
+    --color-earth: #6b5239;
+    --color-terracotta: #ab4d38;
+    --color-charcoal: #1f2723;
+    --color-stone: #697067;
+    --color-border: #ded8cb;
+    --color-border-dark: #b8b09f;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    color: #1f2723;
+    background-color: #faf7f2;
+    -webkit-font-smoothing: antialiased;
+    letter-spacing: -0.011em;
+  }
+
+  /* Distinctive serif display font for clinic titles and headings */
+  .font-serif-clinical {
+    font-family: 'Fraunces', Georgia, serif;
+    font-optical-sizing: auto;
+  }
+
+  /* Ensure tabular numbers across all financial and quantitative elements */
+  .tabular-nums {
+    font-variant-numeric: tabular-nums;
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+/* Custom Botanical Color Utilities - Hand-Crafted Solid Apothecary Palette */
+.bg-forest { background-color: #16382b; }
+.bg-forest-dark { background-color: #0f271e; }
+.text-forest { color: #16382b; }
+.border-forest { border-color: #16382b; }
+
+.bg-moss { background-color: #2b5542; }
+.text-moss { color: #2b5542; }
+.border-moss { border-color: #2b5542; }
+
+.bg-leaf { background-color: #4f7358; }
+.text-leaf { color: #4f7358; }
+.border-leaf { border-color: #4f7358; }
+
+.bg-sage { background-color: #9bb09f; }
+.text-sage { color: #9bb09f; }
+.border-sage { border-color: #9bb09f; }
+
+.bg-gold { background-color: #b88628; }
+.text-gold { color: #b88628; }
+.border-gold { border-color: #b88628; }
+
+.bg-ivory { background-color: #faf7f2; }
+.text-ivory { color: #faf7f2; }
+
+.bg-parchment { background-color: #f0eae1; }
+.text-parchment { color: #f0eae1; }
+.border-parchment { border-color: #f0eae1; }
+
+.bg-linen { background-color: #e4ddd1; }
+.border-linen { border-color: #e4ddd1; }
+
+.bg-paper { background-color: #ffffff; }
+.border-paper { border-color: #ffffff; }
+
+.bg-earth { background-color: #6b5239; }
+.text-earth { color: #6b5239; }
+
+.bg-terracotta { background-color: #ab4d38; }
+.text-terracotta { color: #ab4d38; }
+.border-terracotta { border-color: #ab4d38; }
+
+.text-charcoal { color: #1f2723; }
+.text-stone { color: #697067; }
+.border-subtle { border-color: #ded8cb; }
+
+/* Elegant custom scrollbar for clinical tables */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f0eae1;
+}
+::-webkit-scrollbar-thumb {
+  background: #b8b09f;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #2b5542;
+}
+
+@media print {
+  body {
+    background-color: white !important;
+    color: black !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+  .print-only {
+    display: block !important;
+  }
+}
+

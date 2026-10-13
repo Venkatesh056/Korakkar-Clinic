@@ -1,0 +1,6 @@
+{
+  "name": "Sri Korakkar Siddha & Ayurvedha Clinic - Pharmacy Billing & Accounts",
+  "description": "Pharmacy Billing, Accounts Reconciliation, Patient Management & Prescription System for Sri Korakkar Siddha and Ayurvedha Clinic.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
